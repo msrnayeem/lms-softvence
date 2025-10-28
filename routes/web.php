@@ -1,13 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CourseController;
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::redirect('/', '/courses')->name('index');
 
-Route::namespace('App\Http\Controllers')->prefix('courses')->group(function () {
-    Route::get('/', 'CourseController@index')->name('courses.index');
-    Route::get('/create', 'CourseController@create')->name('courses.create');
-    Route::post('/', 'CourseController@store')->name('courses.store'); 
+Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('/create', 'create')->name('create');
+    Route::post('/', 'store')->name('store');
 });
