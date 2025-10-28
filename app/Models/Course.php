@@ -9,7 +9,7 @@ class Course extends Model
     protected $fillable = [
         'title',
         'description',
-        'feature_image',
+        'feature_video',
         'category_id',
     ];
 
