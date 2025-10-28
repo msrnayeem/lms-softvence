@@ -207,6 +207,18 @@ project-root/
 
 ---
 
+## 📸 Screenshots
+
+### Store Page
+
+![Store Page](./store.png)
+
+### Index Page
+
+![Index Page](./index.png)
+
+---
+
 ## 🧩 Application Flow
 
 ### 1️⃣ Course Creation
@@ -225,17 +237,6 @@ project-root/
 
 ---
 
-## 📸 Screenshots
-
-### Store Page
-
-![Store Page](./store.png)
-
-### Index Page
-
-![Index Page](./index.png)
-
----
 
 ## 👨‍💻 Author
 
